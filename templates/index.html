@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+        Awesome Template
+        http://www.templatemo.com/preview/templatemo_450_awesome
+        -->
+		<title>Activities</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="../static/images/favicon.ico"/>
+		
+		<link rel="stylesheet" href="../static/css/animate.min.css">
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../static/css/templatemo-style.css">
+		<script src="../static/js/jquery.js"></script>
+		<script src="../static/js/bootstrap.min.js"></script>
+        <script src="../static/js/jquery.singlePageNav.min.js"></script>
+		<script src="../static/js/typed.js"></script>
+		<script src="../static/js/wow.min.js"></script>
+		<script src="../static/js/custom.js"></script>
+		
+		<!--Custom JavaScript Alert Box-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>		
+		
+	</head>
+	<body id="top">
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>
+    	<!-- end preloader -->
+
+        <!-- start header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-phone"></i><span> Phone</span>875 869 7489</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">bharatlvora8142@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+                        <ul class="social-icon">
+                            <li><span>Join us on</span></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-apple"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+    	<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Q-REWARD</a>
+				</div>
+				<div class="display">
+					<p>GO HOME PAGE TO VIEW YOUR REWARD</p>
+				</div>
+			</div>
+		</nav>
+		<!-- end navigation -->
+		<a href="#"><button type="button" style="margin-top:20px; margin-left:280px;" class="btn btn-success">HOME</button></a>
+			
+		<div class="col-md-12">
+    		<h2 style="margin-top:30px;" class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">UPLOAD<span>ACTIVITY</span></h2>
+    	</div>
+		
+		<div class="container">
+			<div class="jumbotron">
+				<style type="text/css">
+				.jumbotron {	
+					background-color:#c6ef64;
+				}
+				</style>
+			<form action="{{ url_for('uploader')}}" method="post" enctype="multipart/form-data">
+			<div class="form-horizontal">
+				<div class="form-group">
+					<label class="col-md-4 control-lebal">Activity Number : </label>
+					<div class="col-md-5">
+					<div class="radio_space">
+						<input type="radio" name="num" value="1"> 1&ensp;
+						<input type="radio" name="num" value="2"> 2&ensp;
+						<input type="radio" name="num" value="3"> 3&ensp;
+						<input type="radio" name="num" value="4"> 4&ensp;
+						<input type="radio" name="num" value="5"> 5&ensp;
+						<input type="radio" name="num" value="6"> 6&ensp;
+						<input type="radio" name="num" value="7"> 7&ensp;
+						<input type="radio" name="num" value="8"> 8&ensp;
+					</div>
+					</div>
+				</div>
+				<input type="hidden" name="username" value="{{data}}"/>
+				<div class="form-group">
+					<label for="amt" class="col-md-4 control-lebal">Upload Video : </label>
+					<div class="col-md-5">
+						<input name="file" class="form-control" id="amt" type="file" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-1 col-xs-push-4">
+						<input type="submit" id="submit" onclick="showDiv()" class="btn btn-danger" name="upload" value="UPLOAD"/>
+					</div>
+				</div>
+					<div id="myDIV" style="display:none;" class="answer_list"> 
+							<div class="wrapper">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="shadow"></div>
+								<div class="shadow"></div>
+								<div class="shadow"></div>
+								<div class="shadow"></div>
+								<span>Uploading...</span><br/>
+							</div>
+							<h4>Please wait, we're reviewing your submission</h4>
+						</div>
+						<script>
+						function showDiv() {
+						   document.getElementById('myDIV').style.display = "block";
+						}
+						</script>
+			</div>
+			</form>
+			</div>
+		</div>
+			
+    	<!-- start team -->
+    	<section id="team">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">COMPATE <span>TASK & EARN</span> COINS</h2>
+    				</div>
+    				<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/1.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 1</span>
+    							</div>
+    					</div>
+						
+    				</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.0s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/2.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 2</span>
+    							</div>
+    					</div>
+						
+    				</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.0s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/3.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 3</span>
+    							</div>
+    					</div>
+						
+    				</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.0s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/4.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 4</span>
+    							</div>
+    					</div>
+						
+    				</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.0s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/5.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 5</span>
+    							</div>
+    					</div>
+						
+    				</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.0s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/6.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 6</span>
+    							</div>
+    					</div>
+						
+    				</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.0s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/7.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 7</span>
+    							</div>
+    					</div>
+						
+    				</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.0s">
+    					 <div class="team-wrapper">
+    						<img src="../static/images/8.png" class="img-responsive" alt="Bharat Vora">
+    							<div class="team-des">
+    								<span>Activity - 8</span>
+    							</div>
+    					</div>
+						
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end team -->
+
+        <!-- start copyright -->
+        <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn">
+                       	Copyright &copy; 2020 Q-REWARD</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end copyright -->
+
+	</body>
+</html>

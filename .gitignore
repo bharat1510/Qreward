@@ -1,0 +1,6 @@
+output/* linguist-detectable=false
+static/* linguist-detectable=false
+templates/* linguist-detectable=false
+upload/* linguist-detectable=false
+*.txt linguist-detectable=false
+*.py linguist-detectable=true
