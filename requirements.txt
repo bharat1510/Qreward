@@ -1,6 +1,7 @@
-opencv-python==4.2.0.32
+opencv-python==3.3.0.9
 gunicorn==19.9.0
 Flask==1.1.1
 numpy>=1.9.2
+Jinja2==2.10
 Werkzeug==0.15.5
 tensorflow==1.15.2
