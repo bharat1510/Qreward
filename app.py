@@ -1,4 +1,5 @@
 from tensorflow.keras.models import load_model
+import tensorflow as tf
 #from collections import deque
 import numpy as np
 import pickle
@@ -39,7 +40,7 @@ def uploader():
 		out = outputv+".avi"
 		# load the trained model and label binarizer from disk
 		print("[INFO] loading model and label binarizer...")
-		model = load_model(model_path)
+		model = tf.keras.models.load_model(model_path)
 		lb = pickle.loads(open(label_bin, "rb").read())
 
 		# initialize the image mean for mean subtraction along with the
