@@ -9,8 +9,8 @@ import os
 
 app = Flask(__name__)
 
-model_path = "activity.model"
-label_bin = "lb.pickle"
+model_path = "/app/activity.model"
+label_bin = "/app/lb.pickle"
 uploads_dir = "upload"
 output_dir = "output"
 size = 1
