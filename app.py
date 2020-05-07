@@ -2,15 +2,15 @@ from tensorflow.keras.models import load_model
 #from collections import deque
 import numpy as np
 import pickle
-#import cv2
+import cv2
 from flask import Flask, request,render_template,redirect
 from werkzeug import secure_filename
 import os
 
 app = Flask(__name__)
 
-model_path = "model/activity.model"
-label_bin = "model/lb.pickle"
+model_path = "activity.model"
+label_bin = "lb.pickle"
 uploads_dir = "upload"
 output_dir = "output"
 size = 1
