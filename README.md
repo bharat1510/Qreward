@@ -11,20 +11,20 @@ You can find the website at : qreward.epizy.com/
 
 Home Page - 
 
-![homepage]{https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(255).png}
+![homepage](https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(255).png)
 
 Activity page on heroku - 
 
-![Activity page]{https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(258).png}
+![Activity page](https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(258).png)
 
 If submitted task is appropriate -
 
-![approved]{https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(259).png}
+![approved](https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(259).png)
 
 
 If submitted task is not appropriate -
 
-![Not approved]{https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(260).png}
+![Not approved](https://github.com/bharat1510/image-for-readme.md/blob/master/Qreward/Screenshot%20(260).png)
 
 
 Thank you :-)
