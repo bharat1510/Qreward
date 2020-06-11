@@ -2,7 +2,7 @@
 
 During the COVID-19 pandemic, it is very tough to stop the people in their homes. Especially, in India which has almost 1.3 Billon population. So, here we are come up with a very interesting and innovative idea that can make people not bored by doing some interesting activities like, playing games and doing exercises, etc. In addition, they also can win the reward by completing those activities and redeem the money in their Paytm wallets. The application also uses the Twitter API to show the twit related to COVID-19.
 
-Project Title: Commuters Guide <br/>
+Project Title: Quarantine Reward <br/>
 Project Front-End Langauges: HTML5, CSS3, JS, JQUERY <br/>
 Project Back-End Languages: Flask(Python),Keras Deep Learning, MYSQL <br/>
 I used Heroku to deploy my flask application and epizy for my frontend pages.
